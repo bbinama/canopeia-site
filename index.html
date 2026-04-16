@@ -1116,19 +1116,29 @@
 <!-- PARTNERS -->
 <section id="partners">
   <div class="section-eyebrow">Collaborations</div>
-  <h2 class="section-title">Academic &amp; <em>Institutional</em> Partners</h2>
-  <p class="section-lead">We work alongside world-class research institutions and international bodies to deliver science-led solutions.</p>
+
+  <h2 class="section-title">Academic &amp; <em>Institutional</em> Experience</h2>
+
+  <p class="section-lead">
+    Our team has collaborated with and gained experience across leading academic institutions and international organizations in the fields of biodiversity, conservation, and sustainability.
+  </p>
+
+  <!-- ✅ PLACE IT RIGHT HERE -->
+  <p style="font-size:0.85rem;opacity:0.7;margin-top:10px;">
+    *Affiliations reflect individual experience, research collaboration, or engagement and do not imply formal institutional partnerships.
+  </p>
+
   <div class="partners-logos">
-    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> University of Oxford</div>
-    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> Wageningen University</div>
-    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> CIFOR-ICRAF</div>
+    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> University of Rwanda</div>
+    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> Bielefeld University</div>
+    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> Georg-August University of Göttingen</div>
+    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> University of Leeds</div>
     <div class="partner-pill"><span class="partner-pill-icon">🌐</span> IUCN</div>
-    <div class="partner-pill"><span class="partner-pill-icon">🌐</span> UNEP-WCMC</div>
-    <div class="partner-pill"><span class="partner-pill-icon">🌐</span> WWF International</div>
-    <div class="partner-pill"><span class="partner-pill-icon">🌐</span> Conservation International</div>
-    <div class="partner-pill"><span class="partner-pill-icon">🎓</span> ETH Zürich</div>
+    <div class="partner-pill"><span class="partner-pill-icon">🌐</span> UNESCO World Heritage Centre</div>
+    <div class="partner-pill"><span class="partner-pill-icon">🌐</span> Center of Excellence in Biodiversity and Natural Resource Management</div>
   </div>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact">
@@ -1138,40 +1148,48 @@
       <h2 class="section-title">Start a <em>Conversation</em></h2>
       <p class="section-lead">Whether you have a project in mind, need expert advice, or are exploring partnership opportunities — we'd love to hear from you.</p>
       <div class="contact-details">
-        <div class="contact-item"><div class="contact-item-icon">📍</div> Geneva, Switzerland &bull; Nairobi, Kenya &bull; Rio de Janeiro, Brazil</div>
+        <div class="contact-item"><div class="contact-item-icon">📍</div> Kigali, Rwanda &bull; Göttingen, Germany &bull; Leeds, England</div>
         <div class="contact-item"><div class="contact-item-icon">📧</div> contact@canopeia.com</div>
-        <div class="contact-item"><div class="contact-item-icon">📞</div> +41 22 000 0000</div>
+        <div class="contact-item"><div class="contact-item-icon">📞</div> +250796144143</div>
       </div>
     </div>
-    <form class="contact-form" onsubmit="handleContactSubmit(event)">
-      <input type="text" placeholder="Your name" required/>
-      <input type="email" placeholder="Email address" required/>
-      <input type="text" placeholder="Organisation"/>
-      <select>
-        <option value="" disabled selected>Area of interest</option>
-        <option>Biodiversity Assessment</option>
-        <option>Forests & Land Use</option>
-        <option>Agroecology</option>
-        <option>Nature-Based Solutions</option>
-        <option>Climate Impact Analysis</option>
-        <option>Environmental Impact Assessment</option>
-        <option>Research, Monitoring & Evaluation</option>
-        <option>Grant Proposal Writing</option>
-        <option>Other / Multiple</option>
-      </select>
-      <textarea rows="4" placeholder="Tell us about your project or question..."></textarea>
-      <button type="submit" class="btn-primary" style="border:none;cursor:pointer;width:100%;justify-content:center;">
-        Send Message
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </button>
-    </form>
-  </div>
-</section>
+   <form class="contact-form" action="https://formspree.io/f/xkokjvva" method="POST">
+
+  <input type="text" name="name" placeholder="Your name" required/>
+
+  <input type="email" name="email" placeholder="Email address" required/>
+
+  <input type="text" name="organisation" placeholder="Organisation"/>
+
+  <select name="interest" required>
+    <option value="" disabled selected>Area of interest</option>
+    <option value="Biodiversity Assessment">Biodiversity Assessment</option>
+    <option value="Forests & Land Use">Forests & Land Use</option>
+    <option value="Agroecology">Agroecology</option>
+    <option value="Nature-Based Solutions">Nature-Based Solutions</option>
+    <option value="Climate Impact Analysis">Climate Impact Analysis</option>
+    <option value="Environmental Impact Assessment">Environmental Impact Assessment</option>
+    <option value="Research, Monitoring & Evaluation">Research, Monitoring & Evaluation</option>
+    <option value="Grant Proposal Writing">Grant Proposal Writing</option>
+    <option value="Other / Multiple">Other / Multiple</option>
+  </select>
+
+  <textarea name="message" rows="4" placeholder="Tell us about your project or question..." required></textarea>
+
+  <button type="submit" class="btn-primary" style="border:none;cursor:pointer;width:100%;justify-content:center;">
+    Send Message
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+</form>
+
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">Canopeia<span>.</span></div>
-  <div class="footer-copy">© 2025 Canopeia Consulting. All rights reserved.</div>
+  <div class="footer-copy">© 2026 Canopeia Consulting. All rights reserved.</div>
   <div class="footer-links">
     <a href="#home">Privacy Policy</a>
     <a href="#home">Terms of Use</a>
@@ -1233,40 +1251,53 @@
 // ── TEAM DATA ────────────────────────────────────────────────
 const teamMembers = [
   {
-    name: "Dr. Amara Osei-Bonsu",
+    name: "Dr. Blaise Binama",
     role: "Founder & Director",
     emoji: "👩🏾‍🔬",
     bg: "#2b4d34",
     expertise: ["Biodiversity", "Policy", "Leadership"],
-    bio: "Amara founded Canopeia after 20 years working at the intersection of conservation science and international policy. She has advised governments across Sub-Saharan Africa and Southeast Asia on national biodiversity strategies and served as a lead author on IPBES assessments. Her work focuses on translating ecological evidence into actionable policy frameworks.",
-    quals: ["PhD Ecology, University of Cambridge", "MSc Conservation Biology, ETH Zürich", "Lead Author, IPBES Global Assessment", "IUCN Species Survival Commission Member"],
+    bio: "Binama founded Canopeia after 10 years working at the intersection of conservation science and international policy. He has worked with International organizations to support governments across Africa and Asia on national biodiversity, capacity building and served as a senior researcher at the Georg-August University of Göttingen, Fellow at the Smithsonian Tropical Research Institute. His work focuses on translating ecological evidence into actionable policy frameworks.",
+    quals: ["PhD Natural Science, University of Bielefeld", "MSc Biodiversity and Collection Management, TÜ Dresden IHI Zittau", "German Botanical Society Member",  "BES Member"],
   },
   {
-    name: "Dr. Lorenzo Fernández",
-    role: "Head of Forests & Land Use",
-    emoji: "👨🏻‍💼",
-    bg: "#3a5c40",
-    expertise: ["REDD+", "Forests", "Carbon"],
-    bio: "Lorenzo brings 18 years of experience in tropical forest management, REDD+ finance, and landscape restoration across Latin America, West Africa and Southeast Asia. He has designed and evaluated programmes covering over 25 million hectares of forest landscape.",
-    quals: ["PhD Forest Science, Wageningen University", "MSc Environmental Management, UNAM", "Certified REDD+ Auditor (VCS)", "Member, Forest Stewardship Council"],
-  },
+  name: "Dr. Olivier Jean Léonce Manzi",
+  role: "Forest Ecology & Plant Physiologist",
+  emoji: "👨🏻‍🔬",
+  bg: "#3a5c40",
+  expertise: [
+    "Tropical ecology",
+    "Plant ecophysiology",
+    "Heat & drought stress",
+    "Plant hydraulics",
+    "Forest monitoring"
+  ],
+  bio: "Olivier Jean Léonce Manzi is a plant ecophysiologist specializing in tropical tree responses to heat and drought stress under climate change. His research focuses on the physiological mechanisms that determine tree resilience and vulnerability across tropical ecosystems. He has extensive field experience in French Guiana, Madagascar, and montane forests in Rwanda, working on long-term forest monitoring and ecosystem function.",
+  quals: [
+    "PhD Forest Science, University of Gothenburg",
+    "Research Fellow, African Forest Measurement",
+    "Contributor, CongoFOR1.5 Initiative",
+    "Contributor, AfriTRON Network",
+    "Rwanda TREE Project (Tropical Tree Ecology & Evolution)"
+  ]
+}
+,
   {
-    name: "Dr. Mei-Ling Tan",
+    name: "PhD Candidate Thaulin Dushimiyimana",
     role: "Senior Ecologist",
     emoji: "👩🏻‍🔬",
     bg: "#4a6e54",
     expertise: ["Ecology", "Species Surveys", "EIA"],
-    bio: "Mei-Ling is a field ecologist specialising in rapid biodiversity assessments, terrestrial and freshwater ecosystem surveys, and environmental impact assessment. She has led biodiversity studies across Asia-Pacific and the Congo Basin.",
-    quals: ["PhD Ecology, National University of Singapore", "BSc Biology, University of Hong Kong", "British Ecological Society Fellow"],
+    bio: "Dushimimana is a field ecologist specialising in rapid biodiversity assessments, terrestrial ecosystem surveys, and environmental impact assessment. He has led biodiversity studies across Africa and America.",
+    quals: ["PhD Candidate on Forest modelling at the University of Quebec","MSc Biology, University of Copenhagen", "BSc Biology, University of Rwanda"],
   },
   {
-    name: "Prof. Ibrahim Al-Rashid",
-    role: "Climate & Adaptation Advisor",
+    name: "Mrs. Monique Mujawayezu",
+    role: "Forest & Adaptation Advisor",
     emoji: "👨🏽‍🏫",
     bg: "#5a7a5e",
     expertise: ["Climate Risks", "Adaptation", "Modelling"],
-    bio: "Ibrahim is a climate scientist with extensive experience in downscaling climate projections, vulnerability assessment, and ecosystem-based adaptation. He has contributed to three IPCC Assessment Reports and advises the UNFCCC Adaptation Committee.",
-    quals: ["PhD Climatology, MIT", "MSc Atmospheric Science, Cairo University", "IPCC Contributing Author (AR5, AR6, AR7)", "WMO Expert Panel Member"],
+    bio: "Mujawayezu is a forest scientist with extensive experience in forest restoration, vulnerability assessment, and ecosystem-based adaptation.",
+    quals: ["BSc Botany & Conservation, University of Rwanda"],
   },
   {
     name: "Dr. Chiara Russo",
